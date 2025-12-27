@@ -1,4 +1,4 @@
-FROM alpine:3.20
+FROM python:3.11.14-alpine3.23
 
 RUN apk add --no-cache python3 py3-pip tzdata bash
 
