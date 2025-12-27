@@ -1,10 +1,3 @@
 #!/bin/sh
-set -e
-
-if [ -f /app/.env ]; then
-  set -a
-  . /app/.env
-  set +a
-fi
-
+cd /app
 python -m security_papers.run_job

@@ -61,3 +61,15 @@ docker run --rm \
   -v $(pwd)/data:/data \
   security-papers
 ```
+
+### Docker Compose
+
+You can also use Docker Compose for easier management. Copy the example environment file and fill in your details:
+
+```bash
+cp .env.example .env
+# Edit .env with your settings
+docker-compose up -d
+```
+
+The `docker-compose.yml` is configured to pull environment variables directly from your host environment or a `.env` file.
