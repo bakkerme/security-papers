@@ -4,7 +4,8 @@ import argparse
 import json
 from typing import Iterable
 
-from security_papers.arxiv_client import Paper, fetch_papers
+from security_papers.arxiv_client import fetch_papers
+from security_papers.models import Paper
 
 
 def _serialize_paper(paper: Paper) -> dict[str, object]:
